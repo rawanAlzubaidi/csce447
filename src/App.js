@@ -27,12 +27,12 @@ function App() {
             <div className="button-container">
         <button className="good-design-button">
           <Link to="/good-design" activeClassName="active-link">
-            <i className="fas fa-thumbs-up"></i> Good Design
+            <i className="fas fa-thumbs-up"></i> Good
           </Link>
         </button>
         <button className="bad-design-button">
           <Link to="/bad-design" activeClassName="active-link">
-            <i className="fas fa-thumbs-down"></i> Bad Design
+            <i className="fas fa-thumbs-down"></i> Bad
           </Link>
         </button>
       </div>
