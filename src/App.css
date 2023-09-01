@@ -1,38 +1,144 @@
+/* App.css */
+
+/* Style for the entire page */
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  height: 200vh;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the content container */
+.content-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 10px;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above and move down */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Style for the logo image */
+.App-logo {
+  border: 2px solid #000000;
+  max-width:400px;
+  height: auto;
+  margin-right: 20px; /* Add some spacing between the picture and paragraph */
+}
+
+
+/* ... (previous styles) */
+
+/* Style for the header */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
   color: white;
 }
 
+/* Style for the logo image */
+.App-logo {
+ /* Adds a border around the image */
+  max-width: 200px; /* Set a maximum width for the image */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+  margin-right: 20px;
+}
+
+.App-paragraph p{
+  border: 2px solid #61a6fb; /* Adds a border around the paragraph */
+  border-radius:20px ;
+  padding: 20px; /* Adds padding around the paragraph */
+  text-align: center; /* Center the text */
+  line-height: 2.0;
+  box-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
+/* Style for the link */
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.good-design-button,
+.bad-design-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none; /* Remove underline */
+}
+
+.good-design-button i,
+.bad-design-button i {
+  margin-right: 5px;
+}
+
+.good-design-button:hover,
+.bad-design-button:hover {
+  background-color: #3ab0ff;
+}
+
+.active-link {
+  color: #ff0000; /* Change this to the desired active link color */
+  /* Add any other styling for active links */
+  background-color: red;
+}
+
+/* GoodDesignPage.css */
+
+/* Style for the container */
+.GoodDesignPage-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the heading */
+.GoodDesignPage-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraph */
+.GoodDesignPage-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style for the image */
+.GoodDesignPage-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #61dafb;
+ 
+}
+.good-bad-pic{
+  max-width: 500px;
 }
